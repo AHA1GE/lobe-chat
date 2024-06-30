@@ -39,6 +39,7 @@ config.overrides = [
       'no-undef': 0,
       'react/jsx-no-undef': 0,
       '@typescript-eslint/no-unused-vars': 0,
+      'unused-imports/no-unused-vars': 0,
     }
   }
 ];
