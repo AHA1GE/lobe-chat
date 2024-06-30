@@ -12,6 +12,7 @@ coverage
 jest*
 *.test.ts
 *.test.tsx
+tests
 
 # umi
 .umi
