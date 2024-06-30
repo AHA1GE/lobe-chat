@@ -207,7 +207,7 @@ class DataSync {
 
     // 定义一个变量来保存定时器的ID
     // eslint-disable-next-line no-undef
-    let debounceTimer: any;
+    let debounceTimer: NodeJS.Timeout;
 
     yItemMap?.observe(async (event) => {
       // abort local change
@@ -242,9 +242,9 @@ class DataSync {
       updateSyncEvent(tableKey);
 
       // 设置定时器，2000ms 后更新状态为'synced'
-      debounceTimer = setTimeout(() => {
+      debounceTimer = (setTimeout(() => {
         onSyncStatusChange(PeerSyncStatus.Synced);
-      }, 2000);
+      }, 2000) as NodeJS.Timeout);
     });
   };
 
