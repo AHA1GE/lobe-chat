@@ -84,7 +84,7 @@ class UploadService {
     const base64String = compressImage({ img, type: file.fileType });
     const binaryString = atob(base64String.split('base64,')[1]);
     const uint8Array = Uint8Array.from(binaryString, (char) => char.charCodeAt(0));
-    file.data = uint8Array.buffer;
+    file.data = uint8Array.buffer as ArrayBuffer;
 
     return file;
   }
