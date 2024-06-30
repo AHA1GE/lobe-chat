@@ -36,10 +36,13 @@ config.overrides = [
     files: ['*.ts', '*.tsx'],
     rules: {
       // allow unused vars, unused imports
+      'no-empty': 0,
       'no-undef': 0,
       'react/jsx-no-undef': 0,
       '@typescript-eslint/no-unused-vars': 0,
       'unused-imports/no-unused-vars': 0,
+      'unicorn/empty-brace-spaces': 0,
+
     }
   }
 ];
