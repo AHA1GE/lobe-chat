@@ -32,6 +32,15 @@ config.overrides = [
       'mdx/code-blocks': false,
     },
   },
+  {
+    files: ['*.ts', '*.tsx'],
+    rules: {
+      // allow unused vars, unused imports
+      'no-undef': 0,
+      'react/jsx-no-undef': 0,
+      '@typescript-eslint/no-unused-vars': 0,
+    }
+  }
 ];
 
 module.exports = config;
