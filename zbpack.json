@@ -1,8 +1,8 @@
 {
-    "ignore_dockerfile": true,
-    "serverless": true,
-    "cache_dependencies": true,
-    "install_command": "bun install",
-    "build_command": "npm run build",
-    "start_command": "npm run start"
+  "build_command": "npm run build",
+  "cache_dependencies": true,
+  "ignore_dockerfile": true,
+  "install_command": "pnpm install",
+  "serverless": true,
+  "start_command": "npm run start"
 }
