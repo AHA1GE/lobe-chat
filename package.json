@@ -27,7 +27,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "next build",
-    "postbuild": "npm run build-sitemap && npm run build-migrate-db",
+    "postbuild": "npm run build-sitemap",
     "build-migrate-db": "bun run db:migrate",
     "build-sitemap": "next-sitemap --config next-sitemap.config.mjs",
     "build:analyze": "ANALYZE=true next build",
